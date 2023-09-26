@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import audio from '../assets/svg/audio.svg';
 import folder from '../assets/svg/folder.svg';
 import { useNavigate } from 'react-router-dom';
@@ -20,6 +20,7 @@ const Creation: React.FC = () => {
         ]
         const [selectedAudioFile, setSelectedAudioFile] = useState<File | null>(null);
         const [selectedFolderFiles, setSelectedFolderFiles] = useState<File[] | null>(null);
+
         const navigate = useNavigate()
         const handleAudioFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
                 const file = event.target.files && event.target.files[0];
