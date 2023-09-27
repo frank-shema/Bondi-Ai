@@ -31,9 +31,9 @@ const Login: React.FC = () => {
   });
 
   return (
-    <div className='w-full h-full flex justify-center items-center p-4 overflow-y-auto font-lato'>
-      <div className='w-full md:w-[70%] lg:w-[50%]  bg-white rounded-lg shadow-lg py-5 px-16'>
-        <div className="w-full h-full flex flex-col items-center">
+    <div className='w-full h-full flex justify-center items-center p-4 overflow-y-auto font-lato '>
+      <div className='w-full md:w-[70%] lg:w-[40%]  bg-white rounded-2xl shadow-lg py-5  px-16 h-[80%]'>
+        <div className="w-full h-full flex flex-col items-center gap-x-20 mt-20">
           <div className="flex gap-2 items-center">
             <img src="/svg/logo.svg" alt="" className='w-[40%]' />
             <p className="text-[#108A00] text-[24px] font-bold">Bondi Ai</p>
