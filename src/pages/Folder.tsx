@@ -328,7 +328,7 @@ const Folder: React.FC = () => {
 	) => {
 		const file = event.target.files && event.target.files[0];
 		setSelectedAudioFile(file);
-		navigate("/creation/file/fasdfasdfadfsdfadf");
+		navigate("/main/creation/file/fasdfasdfadfsdfadf");
 	};
 
 	const handleFolderFilesChange = (
@@ -340,7 +340,7 @@ const Folder: React.FC = () => {
 		} else {
 			setSelectedFolderFiles(null);
 		}
-		navigate("/creation/folder/fasdfasdfasd");
+		navigate("/main/creation/folder/fasdfasdfasd");
 	};
 
 	return (

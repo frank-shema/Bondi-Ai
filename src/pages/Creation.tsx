@@ -25,7 +25,7 @@ const Creation: React.FC = () => {
         const handleAudioFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
                 const file = event.target.files && event.target.files[0];
                 setSelectedAudioFile(file);
-                navigate("/creation/file/fasdfasdfadfsdfadf")
+                navigate("/main/creation/file/fasdfasdfadfsdfadf")
         };
 
         const handleFolderFilesChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,7 +35,7 @@ const Creation: React.FC = () => {
                 } else {
                         setSelectedFolderFiles(null);
                 }
-                navigate("/creation/folder/fasdfasdfasd")
+                navigate("/main/creation/folder/fasdfasdfasd")
         };
         return (
                 <div className='p-5 h-screen overflow-y-auto  '>

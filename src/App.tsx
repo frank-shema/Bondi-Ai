@@ -15,15 +15,15 @@ function App() {
 		<div className="bg-[#FBFBFB] w-screen h-screen overflow-hidden">
 			<Router>
 				<Routes>
-					<Route path="/login" element={<Login />} />
+					<Route path="/" element={<Login />} />
 					<Route path="/signup" element={<Signup />} />
-					<Route path="/" element={<Main />}>
-						<Route path="/" element={<Dashboard />} />
-						<Route path="/creation" element={<Creation />} />
-						<Route path="/creation/file/:id" element={<AudioFile />} />
-						<Route path="/creation/folder/:id" element={<Folder />} />
-						<Route path="/database" element={<Database />} />
-						<Route path="/settings" element={<Settings />} />
+					<Route path="/main" element={<Main />}>
+						<Route path="/main" element={<Dashboard />} />
+						<Route path="/main/creation" element={<Creation />} />
+						<Route path="/main/creation/file/:id" element={<AudioFile />} />
+						<Route path="/main/creation/folder/:id" element={<Folder />} />
+						<Route path="/main/database" element={<Database />} />
+						<Route path="/main/settings" element={<Settings />} />
 					</Route>
 				</Routes>
 			</Router>

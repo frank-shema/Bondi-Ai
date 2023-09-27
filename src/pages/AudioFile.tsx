@@ -60,7 +60,7 @@ const AudioFile: React.FC = () => {
         const handleAudioFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
                 const file = event.target.files && event.target.files[0];
                 setSelectedAudioFile(file);
-                navigate("/creation/file/fasdfasdfadfsdfadf")
+                navigate("/main/creation/file/fasdfasdfadfsdfadf")
         };
 
         const sentiments = [
