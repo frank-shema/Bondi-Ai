@@ -95,12 +95,13 @@ const Signup: React.FC = () => {
                                                                 <div className="text-red-500 text-sm">{formik.errors.password}</div>
                                                         ) : null}
                                                 </div>
-                                                <input
-                                                        type="submit"
-                                                        value="Sign up"
-                                                        className='bg-[#108A00] px-4 py-2.5 rounded-md text-[#FBFBFB] font-bold text-sm my-2 w-full cursor-pointer'
-                                                        disabled={formik.isSubmitting}
-                                                />
+                                                <Link to={'/'}>
+                                                        <input
+                                                                type="submit"
+                                                                value="Sign up"
+                                                                className='bg-[#108A00] px-4 py-2.5 rounded-md text-[#FBFBFB] font-bold text-sm my-2 w-full cursor-pointer'
+                                                                disabled={formik.isSubmitting}
+                                                        /></Link>
                                                 <div className="flex w-full justify-center">
                                                         <p className='text-[#636365] text-sm'>Already have an account?</p>
                                                         <Link to={"/"} className='font-bold text-[#108A00] text-sm'>Login</Link>
